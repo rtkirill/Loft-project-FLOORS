@@ -47,6 +47,8 @@ body {
 
 .menu nav ul li a {
 	color: #000;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .menu nav ul li a:hover {
@@ -74,6 +76,10 @@ body {
 	padding: 0!important;
 }
 
+.thumbnail.between {
+	border: 0!important;
+}
+
 .logo span, .banner span, .banner3 span, .page_button span, .page_button2 span {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -87,16 +93,14 @@ body {
 	margin: auto;
 }
 
-.half {
-	height: 200px;
-}
-
-.whole {
-	height: 410px;
+.whole, .half {
+	border: 1px solid #fff!important;
+	overflow: hidden;
 }
 
 .logo {
 	background-color: #fff!important;
+	border: 1px solid #fff!important;
 }
 
 .banner {
@@ -132,52 +136,49 @@ body {
 	display: flex !important;
 }
 
+.news_half {
+	border-left: 0 !important;
+	border-right: 0 !important;
+	height: inherit;
+}
+
 .date {
 	background: #000;
-	border: 1px solid #fff!important;
 	height: 100px;
 	width: 100px!important;
 	color: #fff;
+	border-right: 1px solid #fff !important;
+	border-bottom: 1px solid #fff !important;
+	justify-content: center;
+	align-items: center;
 }
 
 .date p {
 	font-size: 24px;
+	font-family: 'Roboto-Regular', sans-serif!important;
 	line-height: 22px;
 	text-align: center;
-	margin: auto!important;
 }
 
 .news_title {
-	/*height: 75px;*/
-	background-color: #fff;
+	font-size:28px;
+	font-family: 'Roboto-Thin', sans-serif!important;
+	line-height: normal;
 	margin-top: 100px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	min-width: 90%;
+	padding: 10px 15px;
+	background-color: #fff;
+	display: table;
 	text-transform: uppercase;
-	padding: 10px;
-	/*-webkit-box-sizing: border-box!important;
-    -moz-box-sizing: border-box!important;
-    box-sizing: border-box!important;*/
 }
 
 .news_title p {
-	font-size:28px;
-	line-height: normal;
-	margin: 0!important;
-	padding-left:15px;
+	display: table;
 }
 
-.news_title p .header {
-	padding-left: 18px;
+.news_title p.header {
+	padding-left: 14px;
     font-family: 'Roboto-Medium', sans-serif!important;
     font-size: 13px;
-    float: left;
-    display: table;
-    width: 100%;
 }
 
 .news_title p .quote {
@@ -190,7 +191,7 @@ body {
 }
 
 .news_title p .red_stage {
-	margin-left: 18px;
+	margin-left: 14px;
 }
 
 .tags {
@@ -199,7 +200,6 @@ body {
 	text-transform: uppercase;
 	padding: 0 5px;
 	line-height: 15px;
-	height: 15px;
 	margin-bottom: 10px;
 	color: #fff;
 	display: table;
@@ -213,24 +213,31 @@ body {
 	margin-bottom: 0!important;
 }
 
-.city, .about {
+.city, .about, .banner3 {
 	margin-right: 5px;
+} 
+
+.page_button, .page_button2, .news_block_13 {
+	margin-left: 5px;
+}
+
+.city, .about {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .city p, .about p {
 	font-family: 'Roboto-Thin', sans-serif!important;
 	font-size: 26px;
-	margin: auto;
 }
 
 .city {
 	background-color: #000!important;
-	border: 1px solid #fff;
 }
 
 .city p {	
@@ -241,10 +248,6 @@ body {
     text-align: center;
 }
 
-.page_button, .page_button2 {
-	margin-left: 5px;
-}
-
 .page_button {
 	background-color: #fff;
 }
@@ -252,18 +255,14 @@ body {
 .banner3 {
 	background-color: #fff!important;
 	overflow: hidden;
-	margin-right: 5px;
 }
 
 .news_block_13 {
 	background-color: #fff !important;
-	margin-left: 5px;
 	position: relative;
 }
 
 .zagolovok {
-	border: 1px solid #000;
-	/*height: 62px;*/
 	display: table!important;
 	padding: 5px;
 }
@@ -295,7 +294,6 @@ body {
 
 .about {
 	background-color: #fff!important;
-	/*border: 1px solid #fff;*/
 }
 
 .about p {	
@@ -304,7 +302,6 @@ body {
 
 .page_button2 {
 	background-color: #000;
-	border: 1px solid #fff;
 	padding: 15px;
 }
 
@@ -312,9 +309,16 @@ body {
 	background: url(../img/photo_3.png) no-repeat center;
 }
 
-.news_photo, .news_photo1, .news_photo2, .news_photo3, .news_photo4, .news_photo5 {
+.news_photo, .news_photo1, .news_photo2, .news_photo3, .news_photo4, .news_photo5, .news_photo_v {
 	-webkit-background-size: cover!important;
 	background-size: cover!important;
+	border-right: 0 !important;
+	height: inherit;
+}
+
+.news_photo_v {
+	background: url(../img/Vector.png) no-repeat center;
+	height: 200px;
 }
 
 .news_photo {
@@ -353,9 +357,10 @@ body {
 
 .banner2 {
 	background: url(../img/banner2.png) no-repeat center top;
-	-webkit-background-size: contain;
-	background-size: contain;
+	-webkit-background-size: cover;
+	background-size: cover;
 	background-color: #111 !important;
+	border: 1px solid #fff!important;
 }
 
 .news_photo4 {
@@ -372,7 +377,7 @@ body {
 
 .dropdown-menu {
 	display: none;
-	font-size: 13px;
+	font-size: 13px!important;
 	text-transform: uppercase;
 }
 
@@ -399,7 +404,7 @@ ul.dropdown-menu  {
 } 
 
 .dropdown:hover > .dropdown-menu { 
-    display: block; 
+    display: table; 
 } 
 
 .navbar-toggle {
@@ -419,35 +424,85 @@ ul.dropdown-menu  {
 }
 
 @media (max-width: 799px) {
+	/*верхнее выпадающее меню*/
 	.menu {
-		margin-bottom: 10px;
+		/*margin-bottom: 10px;*/
+		display: table;
+		width: 100%;
+		font-size: 24px;
+	}
+
+	.navbar-collapse {
+		background-color: #000!important;
+		padding: 10px 10px 0 10px!important;
 	}
 
 	.menu nav .navbar-nav {
 		display: block !important;
+		background-color: #fff !important;
+		margin: 0;
 	}
 
-	.menu li {
-		border-bottom: 1px solid #fff;
-	}
-
-	.menu a {
-		color: #fff!important;
+	.menu li a {
+		border-bottom: 1px solid #000;
+		text-align: center;
 	}
 
 	.in {
 		z-index: 1000;
 	    width: 100%;
-	    position: relative;
-	    top: 0;
-	    left: 0;
-	    text-align: center;
 	    overflow: hidden !important;
-	    color: #fff;
-	    background-color: #000;
+	}
+
+	.navbar-collapse {
+		border: 0 !important;
 	}
 
 	.dropdown-menu {
 		visibility: hidden;
+	}
+
+	.date {
+		height: 160px !important;
+		width: 160px !important;
+	} 
+
+	.date p {
+		font-size: 36px !important;
+		line-height: 33px !important;
+	}
+
+	.news_title {
+		font-size: 45px !important;
+	}
+
+	.news_title p.header {
+		font-size: 19px !important;
+	}
+
+	.tags {
+		font-size: 15px !important;
+		padding: 5px !important;
+		box-sizing: border-box!important;
+	}
+
+	.left_tags {
+		margin-top: 3px !important;
+	}
+
+	.zagolovok p {
+		font-size: 18px !important;
+	}
+
+	.city p {
+		font-size: 40px !important;
+	}
+}
+
+/*Для корректировки верхнего меню*/
+@media (max-width: 1019px) {
+	.menu nav ul li a {
+		padding-left: 10px!important;
+		padding-right: 10px!important;
 	}
 }
