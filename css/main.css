@@ -86,6 +86,7 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	align-items: center;
 	height: 100%;
 }
 
