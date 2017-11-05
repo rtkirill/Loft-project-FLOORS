@@ -99,13 +99,32 @@
                     <div class="row news-article shop-card">
                         <div class="col-sm-9 col-xs-12 wrap-article">
                             <div class="thumbnail">
-                                <div class="main-photo">
+                                <!-- SLIDER -->
+                                <div id="slider" class="carousel slide" data-ride="carousel" data-interval="false">
                                     <div class="wrapper_main-photo">
-                                        <img src="img/photo_25.png" alt="" class="img-responsive">
-                                        <a href="#" class="btn-left"></a>
-                                        <a href="#" class="btn-right"></a>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="slider-wrapper">
+                                                    <div class="main-photo">
+                                                            <img src="img/photo_25.png" alt="" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="slider-wrapper">
+                                                    <div class="main-photo">
+                                                            <img src="img/photo_25.png" alt="" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Controls -->
+                                        <a class="btn-left" href="#slider" data-slide="prev"></a>
+                                        <a class="btn-right" href="#slider" data-slide="next"></a>
                                     </div>
                                 </div>
+                                <!-- END SLIDER -->
                                 <div class="sm-photos hidden-xs">
                                     <div class="sm-img">
                                         <img src="img/photo_26.png" alt="" class="img-responsive">
